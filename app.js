@@ -2,10 +2,11 @@
 	var app = angular.module('store',[]);
 
 	app.controller('StoreController',function(){
-		this.product = bike;
+		this.products = bikes;
 	});
 
-var bike = {
+var bikes = [
+{
 	name: "BAD BOY",
 	type: "Urban/Fintess",
 	price: 1840,
@@ -13,8 +14,17 @@ var bike = {
     canPurchase: true,
     soldOut: false
 
-}
+},
+{
+    name: "JEKYLL 27.5",
+	type: "Mountain",
+	price: 7990,
+	description: "Jekyll’s two-bikes-in-one split personalities let you love the climbs and KILL the descents.",
+    canPurchase: true,
+    soldOut: false
 
+}
+];
 
 
 })();
